@@ -80,13 +80,15 @@
 
 		$(".contactform").on("submit", function() {
 			$(".output_message").text("Sending...");
-
+			alert("wk");
 			var form = $(this);
+			alert(form);
 			$.ajax({
 				url: form.attr("action"),
 				method: form.attr("method"),
 				data: form.serialize(),
 				success: function(result) {
+					alert(result);
 					if (result == "success") {
 						$(".form-inputs").css("display", "none");
 						$(".box p").css("display", "none");
