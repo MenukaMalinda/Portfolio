@@ -26,8 +26,8 @@ if(empty($name)){
     $mail->Host = 'smtp.gmail.com';
     $mail->Port = 465;
     $mail->SMTPAuth = true;
-    $mail->Username = 'menukamalinda132@gmail.com'; // Your Gmail email address
-    $mail->Password = 'sjwzahilwgfvmjhj'; // Your app password
+    $mail->Username = ''; // Your Gmail email address
+    $mail->Password = ''; // Your app password
     $mail->SMTPSecure = 'ssl';
     // Compose the email
     $mail->setFrom($email, 'Menuka');
